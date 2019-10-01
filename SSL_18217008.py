@@ -38,13 +38,13 @@ class CustomServerHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             getvars = self._parse_GET()
             response = {
-                'XXXXX': 'YYYYY',
+                'RAMA': 'MAHASISWA',
             }
             base_path = urlparse(self.path).path
             if base_path == '/tes1':
                 # Do some work
                 response = {
-                	'AAAAA': 'BBBBB'
+                	'RAMA': 'STAND UP COMEDIAN'
                 }
                 pass
             elif base_path == '/tes2':
